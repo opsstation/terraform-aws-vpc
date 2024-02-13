@@ -8,7 +8,7 @@ on:
 jobs:
   tfsec:
     name: tfsec sarif report
-    runs-on: self
+    runs-on: self-hosted
 
     steps:
       - name: Clone repo
