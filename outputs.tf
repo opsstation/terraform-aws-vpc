@@ -67,3 +67,4 @@ output "arn" {
   value       = join("", aws_flow_log.vpc_flow_log[*].arn)
   description = "Amazon Resource Name (ARN) of VPC"
 }
+
