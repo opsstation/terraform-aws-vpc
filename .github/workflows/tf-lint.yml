@@ -6,7 +6,7 @@ on:
 
 jobs:
   tflint:
-    runs-on: ubuntu-latest
+    runs-on: self
 
     steps:
       - uses: actions/checkout@v4

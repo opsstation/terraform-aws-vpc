@@ -8,7 +8,7 @@ on:
 jobs:
   tfsec:
     name: tfsec sarif report
-    runs-on: ubuntu-latest
+    runs-on: self
 
     steps:
       - name: Clone repo
