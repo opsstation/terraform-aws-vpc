@@ -1,6 +1,6 @@
 <!-- markdownlint-disable -->
 <a href="https://cpco.io/homepage">
-    <img src="https://github.com/opsstation/terraform-aws-vp/blob/main/.github/banner.png?raw=true" alt="Project Banner"/>
+    <img src="https://example.com/terraform-aws-vpc-banner.png?raw=true" alt="Project Banner"/>
 </a>
 <br/>
 <p align="right">
