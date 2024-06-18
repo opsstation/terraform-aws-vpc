@@ -1,0 +1,14 @@
+name: readme workflow
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - 'README.md'
+  workflow_dispatch:
+jobs:
+  assignee:
+    uses: opsstation/github-shared-workflows/.github/workflows/readme.yml@1.2.5
+    secrets:
+      TOKEN : ${{ secrets.GITHUB }}
+      SLACK_WEBHOOK_TERRAFORM: ${{ secrets.SLACK_WEBHOOK_TERRAFORM }}

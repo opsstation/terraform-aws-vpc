@@ -1,0 +1,68 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+
+# Name of this project
+name: Terraform AWS VPC
+
+# License of this project
+license: "APACHE"
+
+# Canonical GitHub repo
+github_repo: opsstation/terraform-aws-vpc
+
+# Badges to display
+badges:
+  - name: "Latest Release"
+    image: "https://img.shields.io/github/release/opsstation/terraform-aws-vpc.svg"
+    url: "https://github.com/opsstation/terraform-aws-vpc/releases/latest"
+  - name: "tfsec"
+    image: "https://github.com/opsstation/terraform-aws-vpc/actions/workflows/tfsec.yml/badge.svg"
+    url: "https://github.com/opsstation/terraform-aws-vpc/actions/workflows/tfsec.yml"
+  - name: "Licence"
+    image: "https://img.shields.io/badge/License-APACHE-blue.svg"
+    url: "LICENSE.md"
+  - name: "Changelog"
+    image: "https://img.shields.io/badge/Changelog-blue"
+    url: "CHANGELOG.md"
+
+prerequesties:
+  - name: Terraform
+    url: https://learn.hashicorp.com/terraform/getting-started/install.html
+    version: ">= 1.6.6"
+
+providers:
+  - name: aws
+    url: https://aws.amazon.com/
+    version: ">= 5.31.0"
+
+module_dependencies:
+  - name: Labels Module
+    url: https://github.com/opsstation/terraform-aws-labels
+    description: Provides resource tagging.
+
+#  description of this project
+description: |-
+  Terraform module vpc to create new modules using this as baseline
+
+# How to use this project
+usage: |-
+  Here are some examples of how you can use this module in your inventory structure:
+
+  ### vpc example
+  ```hcl
+      module "vpc" {
+      source                              = "opsstation/vpc/aws"
+      version                             = "1.0.0"
+      name                                = "vpc"
+      environment                         = "test"
+      cidr_block                          = "10.0.0.0/16"
+      enable_flow_log                     = true # Flow logs will be stored in cloudwatch log group. Variables passed in default.
+      create_flow_log_cloudwatch_iam_role = true
+      additional_cidr_block               = ["172.3.0.0/16", "172.2.0.0/16"]
+      dhcp_options_domain_name            = "service.consul"
+      dhcp_options_domain_name_servers    = ["127.0.0.1", "10.10.0.2"]
+     }
+  ```
+

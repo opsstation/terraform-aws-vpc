@@ -1,0 +1,13 @@
+name: changelog
+permissions: write-all
+on:
+  push:
+    tags:
+      - "*"
+  workflow_dispatch:
+jobs:
+  changelog:
+    uses: opsstation/github-shared-workflows/.github/workflows/changelog.yml@1.2.5
+    secrets: inherit
+    with:
+      branch: 'master'

@@ -1,0 +1,15 @@
+name: tf-checks
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+  workflow_dispatch:
+jobs:
+  basic:
+    uses: opsstation/github-shared-workflows/.github/workflows/tf-checks.yml@1.2.5
+    with:
+      working_directory: './examples/basic/'
+  complete:
+    uses: opsstation/github-shared-workflows/.github/workflows/tf-checks.yml@1.2.5
+    with:
+      working_directory: './examples/complete/'
