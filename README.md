@@ -1,4 +1,4 @@
-[![Banner](https://github.com/opsstation/terraform-aws-vpc/blob/master/docs/opsstation.png)][website]
+[![Banner](https://github.com/opsstation/terraform-aws-vpc/blob/master/docs/opsstation.png)]
 <h1 align="center">
     Terraform aws VPC
 </h1>
