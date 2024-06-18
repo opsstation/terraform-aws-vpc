@@ -1,3 +1,9 @@
+# Terraform AWS VPC Module
+
+![Terraform AWS VPC](https://raw.githubusercontent.com/opsstation/terraform-aws-vpc/master/assets/terraform-aws-vpc-banner.png)
+
+This Terraform module defines a VPC.
+
 <!-- markdownlint-disable -->
 <a href="https://cpco.io/homepage">
 </a>

@@ -1,14 +1,14 @@
-name: Auto Assign PRs
-
-on:
-  pull_request:
-    types: [opened, reopened]
-
-  workflow_dispatch:
-jobs:
-  assignee:
-    uses: opsstation/github-shared-workflows/.github/workflows/auto_assignee.yml@1.2.5
-    secrets:
-      GITHUB: ${{ secrets.GITHUB }}
-    with:
-      assignees: 'opsstation-ci'
+#name: Auto Assign PRs
+#
+#on:
+#  pull_request:
+#    types: [opened, reopened]
+#
+#  workflow_dispatch:
+#jobs:
+#  assignee:
+#    uses: opsstation/github-shared-workflows/.github/workflows/auto_assignee.yml@1.2.5
+#    secrets:
+#      GITHUB: ${{ secrets.GITHUB }}
+#    with:
+#      assignees: 'opsstation-ci'

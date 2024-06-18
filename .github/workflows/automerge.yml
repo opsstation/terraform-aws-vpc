@@ -1,12 +1,12 @@
----
-name: Auto merge
-on:
-  pull_request:
-jobs:
-  auto-merge:
-    uses: opsstation/github-shared-workflows/.github/workflows/auto_merge.yml@1.2.5
-    secrets:
-      GITHUB: ${{ secrets.GITHUB }}
-    with:
-      tfcheck: 'basic / Check code format'
-...
+#---
+#name: Auto merge
+#on:
+#  pull_request:
+#jobs:
+#  auto-merge:
+#    uses: opsstation/github-shared-workflows/.github/workflows/auto_merge.yml@1.2.5
+#    secrets:
+#      GITHUB: ${{ secrets.GITHUB }}
+#    with:
+#      tfcheck: 'basic / Check code format'
+#...
