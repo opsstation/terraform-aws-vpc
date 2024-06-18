@@ -1,10 +1,6 @@
-
-![](../../Downloads/Purple and Pink Bold Business LinkedIn Article Cover Image.png)
-
-
 <!-- markdownlint-disable -->
 <a href="https://cpco.io/homepage">
-    <img src="https://github.com/opsstation/terraform-aws-vpc/blob/main/.github/banner.png?raw=true" alt="Project Banner"/>
+    <img src="https://github.com/opsstation/terraform-aws-vp/blob/main/.github/banner.png?raw=true" alt="Project Banner"/>
 </a>
 <br/>
 <p align="right">
