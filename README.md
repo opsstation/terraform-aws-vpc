@@ -1,6 +1,5 @@
 <!-- markdownlint-disable -->
 <a href="https://cpco.io/homepage">
-    <img src="https://example.com/terraform-aws-vpc-banner.png?raw=true" alt="Project Banner"/>
 </a>
 <br/>
 <p align="right">
