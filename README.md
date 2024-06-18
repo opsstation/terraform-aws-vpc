@@ -1,6 +1,6 @@
 [![Banner](https://github.com/opsstation/terraform-aws-vpc/blob/feat/release-1/docs/opsstation.png)]
 <h1 align="center">
-    Terraform aws VPC
+    TERRAFORM AWS VPC
 </h1>
 
 <!-- markdownlint-disable -->
