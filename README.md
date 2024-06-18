@@ -1,6 +1,10 @@
+[![Banner](https://github.com/opsstation/terraform-aws-vpc/blob/master/docs/opsstation.png)][website]
+<h1 align="center">
+    Terraform aws VPC
+</h1>
+
 <!-- markdownlint-disable -->
 <a href="https://cpco.io/homepage">
-    <img src="https://example.com/terraform-aws-vpc-banner.png?raw=true" alt="Project Banner"/>
 </a>
 <br/>
 <p align="right">
