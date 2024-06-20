@@ -1,7 +1,6 @@
 
 <!-- markdownlint-disable -->
-<a href="https://cpco.io/homepage">
-<a href="https://cpco.io/homepage"><img src="https://github.com/opsstation/terraform-aws-vpc/blob/feat/release-1/docs/ops.jpeg?raw=true" alt="Project Banner"/></a><br/>
+<a href="https://www.linkedin.com/company/opsstation/"><img src="https://github.com/opsstation/terraform-aws-vpc/blob/feat/release-1/docs/ops.jpeg?raw=true" alt="Project Banner"/></a><br/>
     <p align="right">
 </a>
 <br/>
