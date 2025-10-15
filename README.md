@@ -1,8 +1,8 @@
-# 🏗️ terraform-aws-vpc
+# 🏗️ Terraform-Aws-Vpc
 
-[![OpsStation](https://img.shields.io/badge/Made%20by-OpsStation-blue?style=flat-square&logo=terraform)](https://www.opsstation.com)  
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)  
-[![Terraform](https://img.shields.io/badge/Terraform-1.6%2B-purple.svg?logo=terraform)](#)  
+[![OpsStation](https://img.shields.io/badge/Made%20by-OpsStation-blue?style=flat-square&logo=terraform)](https://www.opsstation.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Terraform](https://img.shields.io/badge/Terraform-1.6%2B-purple.svg?logo=terraform)](#)
 [![CI](https://github.com/OpsStation/terraform-multicloud-labels/actions/workflows/ci.yml/badge.svg)](https://github.com/OpsStation/terraform-multicloud-labels/actions/workflows/ci.yml)
 
 > 🌩️ **A production-grade, reusable AWS VPC module by [OpsStation](https://www.opsstation.com)**  
@@ -23,7 +23,7 @@
 ---
 ## 🌟 Features
 
-- ✅ Creates AWS **VPC**, **public/private subnets**, **route tables**, **IGW**, and **NAT gateways**
+- ✅ Creates AWS **VPC**, **route tables**, **IGW**, and **NAT gateways**
 - ✅ Supports **multiple CIDR ranges** and **availability zones**
 - ✅ Optional **VPC Flow Logs** with CloudWatch or S3 destination
 - ✅ Configurable **DHCP options**
