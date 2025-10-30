@@ -32,9 +32,3 @@ jobs:
       # Validate configuration
       - name: Terraform Validate
         run: terraform validate -no-color
-
-#      # (Optional) Terraform Plan — for visibility only
-#      - name: Terraform Plan
-#        run: terraform plan -no-color
-#        env:
-#          TF_LOG: WARN
