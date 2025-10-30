@@ -1,20 +1,31 @@
 ## Managed By : OpsStation
-## Description : This Script is used to create Transfer Server, Transfer User And label .
 ## Copyright @ OpsStation. All Right Reserved.
+##-----------------------------------------------------------------------------
+## Labels module callled that will be used for naming and tags.
+##-----------------------------------------------------------------------------##-----------------------------------------------------------------------------
+
 module "labels" {
-  source      = "git::https://github.com/opsstation/terraform-aws-labels.git?ref=v1.0.0"
+  source      = "opsstation/labels/multicloud"
+  version     = "1.0.0"
   name        = var.name
-  environment = var.environment
-  managedby   = var.managedby
   label_order = var.label_order
+  managedby   = var.managedby
+  environment = var.environment
   repository  = var.repository
+  attributes  = ["v2"]
+
+  extra_tags = {
+    Owner      = "Sohan"
+    CostCenter = "Finance"
+  }
 }
+
 
 ##-----------------------------------------------------------------------------
 ## Below resources will deploy VPC and its components.
 ##-----------------------------------------------------------------------------
-#tfsec:ignore:aws-ec2-require-vpc-flow-logs-for-all-vpcs ## Because flow log resource for vpc is defined below.
 
+#tfsec:ignore:aws-ec2-require-vpc-flow-logs-for-all-vpcs ## Because flow log resource for vpc is defined below.
 resource "aws_vpc" "default" {
   count                                = var.enable ? 1 : 0
   cidr_block                           = var.ipam_pool_enable ? null : var.cidr_block

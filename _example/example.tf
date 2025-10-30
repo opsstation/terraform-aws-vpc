@@ -6,8 +6,8 @@ provider "aws" {
 ##-----------------------------------------------------------------------------
 module "vpc" {
   source                              = "./../"
-  name                                = "app"
-  environment                         = "test"
+  name                                = "vpc"
+  environment                         = "prod"
   cidr_block                          = "10.0.0.0/16"
   enable_flow_log                     = true # Flow logs will be stored in cloudwatch log group. Variables passed in default.
   create_flow_log_cloudwatch_iam_role = true
