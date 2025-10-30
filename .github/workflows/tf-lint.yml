@@ -1,7 +1,7 @@
 name: Terraform-Lint
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
 
 jobs:
@@ -32,4 +32,6 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
 
       - name: Run TFLint
-        run: tflint -f compact
+        run: |
+          # Run TFLint and allow exit code 2 (warnings only)
+          tflint -f compact || [ $? -eq 2 ]

@@ -1,0 +1,16 @@
+name: pre-commit
+on:
+  pull_request:
+  push:
+    branches: [master]
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.8.5  # :arrows_counterclockwise: replace with your desired version
+      - uses: actions/setup-python@v3
+      - uses: pre-commit/action@v3.0.0

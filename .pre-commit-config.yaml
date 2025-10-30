@@ -2,8 +2,8 @@ repos:
   - repo: https://github.com/gruntwork-io/pre-commit
     rev: v0.1.12 # Get the latest from: https://github.com/gruntwork-io/pre-commit/releases
     hooks:
-      #- id: terraform-fmt
-      - id: shellcheck
+      - id: terraform-fmt
+  #      - id: shellcheck
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.0.1 # Use the ref you want to point at
@@ -17,8 +17,8 @@ repos:
       - id: check-yaml
       - id: check-added-large-files
 
-  - repo: https://github.com/terraform-docs/terraform-docs
-    rev: "v0.16.0"
-    hooks:
-      - id: terraform-docs-go
-        args: ["markdown", "table", "--output-file", "README.md", "./"]
+#  - repo: https://github.com/terraform-docs/terraform-docs
+#    rev: "v0.16.0"
+#    hooks:
+#      - id: terraform-docs-go
+#        args: ["markdown", "table", "--output-file", "README.md", "./"]

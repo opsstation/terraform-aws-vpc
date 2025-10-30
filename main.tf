@@ -5,10 +5,13 @@
 ##-----------------------------------------------------------------------------##-----------------------------------------------------------------------------
 
 module "labels" {
-  source      = "git::https://github.com/OpsStation/terraform-multicloud-labels.git"
-  name        = "payment-api"
-  environment = "prod"
-  repository  = "terraform-multicloud-labels"
+  source      = "opsstation/labels/multicloud"
+  version     = "1.0.0"
+  name        = var.name
+  label_order = var.label_order
+  managedby   = var.managedby
+  environment = var.environment
+  repository  = var.repository
   attributes  = ["v2"]
 
   extra_tags = {

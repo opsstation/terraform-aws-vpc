@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+
+jobs:
+  terraform:
+    name: Terraform CI
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout repo code
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Setup Terraform
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.13.3
+
+      # Validate formatting
+      - name: Terraform Format Check
+        run: terraform fmt -check -recursive
+
+      # Initialize Terraform
+      - name: Terraform Init
+        run: terraform init -input=false
+
+      # Validate configuration
+      - name: Terraform Validate
+        run: terraform validate -no-color
+
+#      # (Optional) Terraform Plan — for visibility only
+#      - name: Terraform Plan
+#        run: terraform plan -no-color
+#        env:
+#          TF_LOG: WARN

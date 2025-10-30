@@ -5,7 +5,7 @@
 [![Terraform](https://img.shields.io/badge/Terraform-1.6%2B-purple.svg?logo=terraform)](#)
 [![CI](https://github.com/OpsStation/terraform-multicloud-labels/actions/workflows/ci.yml/badge.svg)](https://github.com/OpsStation/terraform-multicloud-labels/actions/workflows/ci.yml)
 
-> 🌩️ **A production-grade, reusable AWS VPC module by [OpsStation](https://www.opsstation.com)**  
+> 🌩️ **A production-grade, reusable AWS VPC module by [OpsStation](https://www.opsstation.com)**
 > Designed for reliability, performance, and security — following AWS networking best practices.
 ---
 
@@ -17,7 +17,7 @@
 - 🛡️ **Security & Compliance** baked into CI/CD pipelines
 - ⚙️ **Fully Managed Operations** across AWS, Azure, and GCP
 
-> 💡 Need enterprise-grade DevOps automation?  
+> 💡 Need enterprise-grade DevOps automation?
 > 👉 Visit [**www.opsstation.com**](https://www.opsstation.com) or email **hello@opsstation.com**
 
 ---
